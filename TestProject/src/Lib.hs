@@ -45,6 +45,18 @@ intlog k n
     | n>=k =1+ intlog k (div n k)
     | otherwise=0
 
+f4 :: Int-> Int
+f4 n = g n 0
+
+g ::
+
+functionfor3 :: Int -> Int -> Int 
+functionfor3 x y 
+    | x<=0  = 0
+    | even x = (functionfor3 (x `div` 2) (y+y))
+    | odd x = (functionfor3 (x `div` 2) (y+y)) + y 
+
+
 
 
 someFunc = putStrLn "Hello World!"
