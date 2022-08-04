@@ -65,7 +65,11 @@ sumpairslist ((x,y):xs)= x+y+ sumpairslist xs
 type Point2D = (Float,Float)
 
 distance :: Point2D -> Point2D -> Float
-distance (x1,y1) (x2,y2) = sqrt ( sqr  (x2-x1) + sqr (y2-y1) )
+distance (x1,y1) (x2,y2) = sqrt ( sqr  xdiff + sqr ydiff  )
     where
+    xdiff :: Float
+    xdiff = x2-x1
+    ydiff :: Float
+    ydiff = y2-y1
     sqr :: Float -> Float
     sqr x = x*x
