@@ -46,9 +46,9 @@ intlog k n
     | otherwise=0
 
 f4 :: Int-> Int
-f4 n = g n 0
 
-g ::
+f4 n =0
+
 
 functionfor3 :: Int -> Int -> Int 
 functionfor3 x y 

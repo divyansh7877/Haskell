@@ -25,6 +25,8 @@ source-repository head
 
 library
   exposed-modules:
+      Assignment1
+      Factorial
       Lib
   other-modules:
       Paths_TestProject

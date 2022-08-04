@@ -1,6 +1,8 @@
 module Main where
 
 import Lib
-import factorial
+import Factorial
+import Week2
 main :: IO ()
 main = someFunc
+
