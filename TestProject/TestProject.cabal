@@ -26,8 +26,15 @@ source-repository head
 library
   exposed-modules:
       Assignment1
+      Assignment2
+      Assignment4
+      Assignment5
+      Assignment6
+      Assignment7
       Factorial
       Lib
+      Week2
+      Week3
   other-modules:
       Paths_TestProject
   hs-source-dirs:

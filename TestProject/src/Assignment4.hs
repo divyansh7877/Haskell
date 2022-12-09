@@ -34,8 +34,13 @@ f3 (x:y:xs)
     | x==y = f3 (x:xs)
     | otherwise = (x:f3 (y: xs))
 
--- f4 :: [Int] -> [[Int]]
--- f4 [] = []
--- f4 [x] = [[x]]
--- f4 
+f4 :: [Int] -> [[Int]]
+f4 l = f4Helper [] l
+    where 
+        f4Helper :: [Int] -> [Int] ->[[Int]]
+        f4Helper l [] = []
+        f4Helper l [x] = [l ++ [x]]
+        f4Helper l (x:y:xs)
+            | x <= y    = f4Helper (l ++ [x]) (y:xs)
+            | otherwise = (l ++ [x]):(f4Helper [] (y:xs))
 
